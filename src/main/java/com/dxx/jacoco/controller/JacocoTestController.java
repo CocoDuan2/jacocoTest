@@ -3,6 +3,7 @@ package com.dxx.jacoco.controller;
 
 import com.dxx.jacoco.service.IJacocoTestService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -20,7 +21,7 @@ public class JacocoTestController {
     }
 
     @GetMapping("test2")
-    public String test2(String name,Integer age) {
+    public String test2(@RequestParam("name") String name, @RequestParam("age")Integer age) {
         return  jacocoTestService.test2(name,age);
     }
 }
