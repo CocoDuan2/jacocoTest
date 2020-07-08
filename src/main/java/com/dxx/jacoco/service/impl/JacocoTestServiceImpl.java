@@ -12,4 +12,10 @@ public class JacocoTestServiceImpl implements IJacocoTestService {
         String s = "JacocoTest1 测试姓名:" + name;
         return s;
     }
+
+    @Override
+    public String test2(String name, Integer age) {
+        String s = "JacocoTest2 测试姓名:" + name + "年龄:" + age;
+        return s;
+    }
 }

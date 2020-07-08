@@ -16,7 +16,11 @@ public class JacocoTestController {
 
     @GetMapping("test1")
     public String test1(String name) {
-
         return  jacocoTestService.test1(name);
+    }
+
+    @GetMapping("test2")
+    public String test2(String name,Integer age) {
+        return  jacocoTestService.test2(name,age);
     }
 }
