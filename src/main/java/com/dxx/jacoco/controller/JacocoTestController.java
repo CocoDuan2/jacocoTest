@@ -29,4 +29,9 @@ public class JacocoTestController {
     public String test3(@RequestParam("name") String name, @RequestParam("age")Integer age) {
         return  jacocoTestService.test2(name,age);
     }
+
+    @GetMapping("test4")
+    public String test4(@RequestParam("name") String name, @RequestParam("age")Integer age) {
+        return  jacocoTestService.test2(name,age);
+    }
 }
