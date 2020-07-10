@@ -21,6 +21,8 @@ public class JacocoTestServiceImpl implements IJacocoTestService {
 
     @Override
     public String test5(String name, Integer age) {
+
+        System.out.println(name);
         return "hahahah";
     }
 
