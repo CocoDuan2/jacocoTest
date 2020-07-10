@@ -27,12 +27,12 @@ public class JacocoTestController {
 
     @GetMapping("test3")
     public String test3(@RequestParam("name") String name, @RequestParam("age")Integer age) {
-        return  jacocoTestService.test2(name,age);
+        return  jacocoTestService.test3(name,age);
     }
 
     @GetMapping("test4")
     public String test4(@RequestParam("name") String name, @RequestParam("age")Integer age) {
-        return  jacocoTestService.test2(name,age);
+        return  jacocoTestService.test4(name,age);
     }
 
     @GetMapping("test5")

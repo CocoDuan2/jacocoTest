@@ -23,4 +23,14 @@ public class JacocoTestServiceImpl implements IJacocoTestService {
     public String test5(String name, Integer age) {
         return "hahahah";
     }
+
+    @Override
+    public String test3(String name, Integer age) {
+        return "test3333";
+    }
+
+    @Override
+    public String test4(String name, Integer age) {
+        return "test4444";
+    }
 }
