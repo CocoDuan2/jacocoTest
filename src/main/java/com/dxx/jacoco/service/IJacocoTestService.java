@@ -10,4 +10,6 @@ public interface IJacocoTestService {
     String test3(String name, Integer age);
 
     String test4(String name, Integer age);
+
+    String test6(String name, Integer age);
 }
